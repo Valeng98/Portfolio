@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-Sn-0LT">
+                                <rect key="frame" x="76" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo The App Movies (1)" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-F7-uKB">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="929"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="The Movies" translatesAutoresizingMaskIntoConstraints="NO" id="4QI-KB-7Cg">
+                                <rect key="frame" x="14" y="346.5" width="386" height="213"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4QI-KB-7Cg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3jF-f1-H64"/>
+                            <constraint firstItem="uBu-Sn-0LT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="4gA-88-Jql"/>
+                            <constraint firstItem="4QI-KB-7Cg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Laa-ud-8Yc"/>
+                            <constraint firstItem="hvm-F7-uKB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-62" id="QCs-iq-Cy9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBu-Sn-0LT" secondAttribute="trailing" constant="98" id="b5Z-xB-COn"/>
+                            <constraint firstItem="hvm-F7-uKB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="crF-X7-MRQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uBu-Sn-0LT" secondAttribute="bottom" constant="514" id="klb-Dq-gQ2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hvm-F7-uKB" secondAttribute="bottom" constant="-49" id="sdC-XE-r8A"/>
+                            <constraint firstItem="hvm-F7-uKB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tH4-dJ-BdA"/>
+                            <constraint firstItem="uBu-Sn-0LT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="vji-ge-bhk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo The App Movies (1)" width="500" height="500"/>
+        <image name="The Movies" width="386" height="213"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
