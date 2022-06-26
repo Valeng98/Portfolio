@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Edit-->
+        <scene sceneID="2SD-dP-PAb">
+            <objects>
+                <viewController storyboardIdentifier="EventEdit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yYu-lE-mlg" customClass="EventEditViewController" customModule="Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVT-IO-cFR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sci-1d-vtK">
+                                <rect key="frame" x="20.5" y="117" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="ntV-tG-vE3">
+                                <rect key="frame" x="20.5" y="161" width="373" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="m4B-Hs-Imv"/>
+                                </constraints>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dxx-GG-WPd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ntV-tG-vE3" firstAttribute="top" secondItem="sci-1d-vtK" secondAttribute="bottom" constant="10" id="3v0-Jp-xjg"/>
+                            <constraint firstItem="ntV-tG-vE3" firstAttribute="centerX" secondItem="sci-1d-vtK" secondAttribute="centerX" id="Com-d3-bQf"/>
+                            <constraint firstItem="ntV-tG-vE3" firstAttribute="width" secondItem="sci-1d-vtK" secondAttribute="width" id="O15-Sl-apu"/>
+                            <constraint firstItem="sci-1d-vtK" firstAttribute="top" secondItem="Dxx-GG-WPd" secondAttribute="top" constant="29" id="QBo-rW-dKJ"/>
+                            <constraint firstItem="ntV-tG-vE3" firstAttribute="centerX" secondItem="Dxx-GG-WPd" secondAttribute="centerX" id="RMH-iB-AQr"/>
+                            <constraint firstItem="sci-1d-vtK" firstAttribute="centerX" secondItem="Dxx-GG-WPd" secondAttribute="centerX" id="ULv-TQ-8VF"/>
+                            <constraint firstItem="sci-1d-vtK" firstAttribute="width" secondItem="aVT-IO-cFR" secondAttribute="width" multiplier="0.9" id="pcK-6r-Wef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event Edit" id="prZ-eK-QBI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Ehk-8p-Ovk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rhO-bf-5YT">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="yYu-lE-mlg" eventType="touchUpInside" id="oMy-Wf-Caa"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="datePicker" destination="ntV-tG-vE3" id="yJd-oc-oJg"/>
+                        <outlet property="nameTF" destination="sci-1d-vtK" id="aRC-v4-J8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7s-Lv-aez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
