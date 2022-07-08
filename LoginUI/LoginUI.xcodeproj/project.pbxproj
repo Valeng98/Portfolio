@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBC55D1E2878CF1A00822ABC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC55D1D2878CF1A00822ABC /* UIViewController+Extension.swift */; };
 		EBD990AD284A0827008692E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD990AC284A0827008692E2 /* AppDelegate.swift */; };
 		EBD990AF284A0827008692E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD990AE284A0827008692E2 /* SceneDelegate.swift */; };
 		EBD990B1284A0827008692E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD990B0284A0827008692E2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBC55D1D2878CF1A00822ABC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		EBD990A9284A0827008692E2 /* LoginUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD990AC284A0827008692E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD990AE284A0827008692E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBC55D1C2878CED800822ABC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55D1D2878CF1A00822ABC /* UIViewController+Extension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		EBD990A0284A0827008692E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		EBD990AB284A0827008692E2 /* LoginUI */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55D1C2878CED800822ABC /* Shared */,
 				EBD990AC284A0827008692E2 /* AppDelegate.swift */,
 				EBD990AE284A0827008692E2 /* SceneDelegate.swift */,
 				EBD990B0284A0827008692E2 /* ViewController.swift */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC55D1E2878CF1A00822ABC /* UIViewController+Extension.swift in Sources */,
 				EBD990B1284A0827008692E2 /* ViewController.swift in Sources */,
 				EBD990AD284A0827008692E2 /* AppDelegate.swift in Sources */,
 				EBD990AF284A0827008692E2 /* SceneDelegate.swift in Sources */,

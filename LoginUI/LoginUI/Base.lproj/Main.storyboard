@@ -23,7 +23,7 @@
                                         <rect key="frame" x="125.5" y="16" width="163" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="GP0-P2-BvY"/>
-                                            <constraint firstAttribute="width" constant="163" id="ezl-AV-RRr"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="ezl-AV-RRr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +48,7 @@
                                 <rect key="frame" x="136.5" y="147" width="141" height="32"/>
                                 <color key="backgroundColor" red="0.72669333219999999" green="0.34474819899999998" blue="0.1332395673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="5S1-Jl-uCb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="5S1-Jl-uCb"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Login"/>
@@ -147,7 +147,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-G2-TDT">
                                 <rect key="frame" x="343" y="398" width="51" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="tKk-YJ-w6C"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="tKk-YJ-w6C"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -169,16 +169,6 @@
                                     <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7I-49-uqh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkB-B0-rgT">
-                                <rect key="frame" x="20" y="730" width="374" height="57"/>
-                                <color key="backgroundColor" red="0.66666668650000005" green="0.54282725170000001" blue="0.44766873909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="QtH-NQ-76s"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -188,7 +178,6 @@
                             <constraint firstItem="IFb-FQ-tqB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="2hp-3a-gNj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7fI-nY-y8Q" secondAttribute="trailing" constant="22" id="5cD-z5-q6l"/>
                             <constraint firstItem="K7Q-We-HHE" firstAttribute="top" secondItem="b71-dh-vSN" secondAttribute="bottom" constant="8" symbolic="YES" id="97z-02-TwN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkB-B0-rgT" secondAttribute="trailing" constant="20" id="Cdz-3Z-VCp"/>
                             <constraint firstItem="ovA-e5-gNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cze-bS-RTe"/>
                             <constraint firstItem="b71-dh-vSN" firstAttribute="top" secondItem="amr-PE-orZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ExQ-Ie-kxK"/>
                             <constraint firstItem="IFb-FQ-tqB" firstAttribute="top" secondItem="K7Q-We-HHE" secondAttribute="bottom" constant="20" id="Hzr-yk-hPJ"/>
@@ -197,13 +186,11 @@
                             <constraint firstItem="amr-PE-orZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a9d-S5-Mfi"/>
                             <constraint firstItem="7fI-nY-y8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bj2-Wq-DwL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b71-dh-vSN" secondAttribute="trailing" constant="140" id="ccA-MJ-VB9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kkB-B0-rgT" secondAttribute="bottom" constant="75" id="dt3-iW-mpb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7Q-We-HHE" secondAttribute="trailing" id="g71-YO-met"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ovA-e5-gNK" secondAttribute="trailing" id="gGD-Wf-RkM"/>
                             <constraint firstItem="XBg-G2-TDT" firstAttribute="top" secondItem="hVX-le-pWn" secondAttribute="top" id="gzi-8Y-AH0"/>
                             <constraint firstItem="poD-da-GRq" firstAttribute="top" secondItem="IFb-FQ-tqB" secondAttribute="bottom" constant="10" id="hUx-cM-RQi"/>
                             <constraint firstItem="ovA-e5-gNK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iH3-tG-456"/>
-                            <constraint firstItem="kkB-B0-rgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m9T-7Z-nTJ"/>
                             <constraint firstItem="b71-dh-vSN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="nOl-rT-4hn"/>
                             <constraint firstItem="lCq-1f-cJB" firstAttribute="top" secondItem="ovA-e5-gNK" secondAttribute="bottom" constant="20" id="oY0-8U-mpx"/>
                             <constraint firstItem="K7Q-We-HHE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pbo-1F-CBe"/>
@@ -219,7 +206,6 @@
                         <outlet property="emailTxField" destination="ZKs-Q8-faz" id="DVz-OQ-eup"/>
                         <outlet property="loginOrRegister" destination="amr-PE-orZ" id="NiK-T1-liV"/>
                         <outlet property="mainButton" destination="7fI-nY-y8Q" id="fML-Lh-wKh"/>
-                        <outlet property="notificationLabel" destination="kkB-B0-rgT" id="szD-Yd-YOH"/>
                         <outlet property="passwordTxField" destination="hVX-le-pWn" id="NT2-aA-SID"/>
                     </connections>
                 </viewController>

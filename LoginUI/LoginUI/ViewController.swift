@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTxField: UITextField!
     @IBOutlet weak var confEmailAnnotation: UILabel!
     @IBOutlet weak var mainButton: UIButton!
-    @IBOutlet weak var notificationLabel: UILabel!
 
     
     var loginMode = true
@@ -28,7 +27,6 @@ class ViewController: UIViewController {
         confirmEmailTxField.isHidden = true
         confEmailAnnotation.isHidden = true
         passwordTxField.isSecureTextEntry = true
-        notificationLabel.isHidden = true
     }
 
     @IBAction func logout(_ sender: Any) {
@@ -36,45 +34,39 @@ class ViewController: UIViewController {
     @IBAction func forgotyourpassword(_ sender: Any) {
     }
     @IBAction func signInAction(_ sender: Any) {
+        
         if loginMode{
-            
+           
             let email = emailTxField.text
             let pass = passwordTxField.text
-            if email == "example@gmail.com" && pass == "Pass1234"{
-                
-                notificationLabel.isHidden = false
-                notificationLabel.text = "Login Successeded"
-                notificationLabel.backgroundColor = .clear
+           
+            if email == "example@gmail.com" && pass == "Pass1234" {
+               
+                alert(mensaje: "Login Successeded")
             }
             else {
-                notificationLabel.isHidden = false
-                notificationLabel.text = "Login Failed"
-                notificationLabel.backgroundColor = .lightGray
+                alert(mensaje: "Login Failed")
             }
         }
-        //register
+        // User register
+        
         else {
             
             let email = emailTxField.text
             let confEmail = confirmEmailTxField.text
             let pass = passwordTxField.text
             
-            if email == "" || confEmail == "" || pass == ""  {
-                notificationLabel.isHidden = false
-                notificationLabel.text = "All fields are necessary"
-                notificationLabel.backgroundColor = .systemOrange
+            if email == "" || confEmail == "" || pass == "" {
+                alert(mensaje: "All fields are necessary")
             }
             else {
                 
             if email != confEmail {
-                notificationLabel.isHidden = false
-                notificationLabel.text = "The two emails don't match"
-                notificationLabel.backgroundColor = .systemOrange
+                alert(mensaje: "The two emails don't match")
             }
             else{
-                notificationLabel.isHidden = false
-                notificationLabel.text = "Registered Successfully"
-                notificationLabel.backgroundColor = .systemGreen
+                alert(mensaje: "Registered Successfully")
+        
             }
         }
     }
